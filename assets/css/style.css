@@ -1,3 +1,14 @@
-
+@font-face {
+  font-family: "Nunito Semi-bold", sans-serif;
+  src: url(../fonts/Nunito/static/Nunito-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url(../fonts/Open_Sans/static/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url(../fonts/Open_Sans/static/OpenSans-Regular.ttf);
+}
 
 /*# sourceMappingURL=style.css.map */
