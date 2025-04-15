@@ -3,6 +3,7 @@
 body {
     font-family: variables.$police-principale;
     font-size: 1.25rem;
+    color: variables.$couleur-principale;
 }
 
 h1, h2, h3 {
@@ -23,11 +24,12 @@ section:not(#banner) {
     margin: 5%;
 }
 
-a {text-decoration: none;}
+a {text-decoration: none;
+    color: black;}
 
 #banner {
     text-align: center;
-    // color: white;
+    color: white;
     background-image: url(../img/background_image.png);
     background-size: cover ;
     height: 90vh;

@@ -13,6 +13,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
+  color: #FFECEB;
 }
 
 h1, h2, h3 {
@@ -37,10 +38,12 @@ section:not(#banner) {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 #banner {
   text-align: center;
+  color: white;
   background-image: url(../img/background_image.png);
   background-size: cover;
   height: 90vh;
@@ -48,6 +51,9 @@ a {
 
 #header {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 #header .logo-top {
   width: 20%;
@@ -57,6 +63,11 @@ a {
 }
 #header ul {
   list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+#header ul li {
+  width: 25%;
 }
 
 @media screen and (max-width: 768px) {
