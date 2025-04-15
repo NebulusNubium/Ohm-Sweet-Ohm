@@ -31,6 +31,34 @@ h2 {
   font-size: 1.625rem;
 }
 
+section:not(#banner) {
+  margin: 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#banner {
+  text-align: center;
+  background-image: url(../img/background_image.png);
+  background-size: cover;
+  height: 90vh;
+}
+
+#header {
+  display: flex;
+}
+#header .logo-top {
+  width: 20%;
+}
+#header .logo-top img {
+  width: 100%;
+}
+#header ul {
+  list-style: none;
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 3rem;

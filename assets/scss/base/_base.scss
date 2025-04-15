@@ -18,3 +18,17 @@ h2 {
 h2 {
     font-size: 1.625rem;
 }
+
+section:not(#banner) { 
+    margin: 5%;
+}
+
+a {text-decoration: none;}
+
+#banner {
+    text-align: center;
+    // color: white;
+    background-image: url(../img/background_image.png);
+    background-size: cover ;
+    height: 90vh;
+}
