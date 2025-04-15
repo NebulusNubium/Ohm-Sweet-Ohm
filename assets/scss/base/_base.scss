@@ -1,0 +1,20 @@
+@use "../abstract/variables";
+
+body {
+    font-family: variables.$police-principale;
+    font-size: 1.25rem;
+}
+
+h1, h2, h3 {
+    font-family: variables.$police-secondaire;
+}
+
+h1 {
+    font-size: 6rem;
+}
+h2 {
+    font-size: 3.25rem;
+}
+h2 {
+    font-size: 1.625rem;
+}

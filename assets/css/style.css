@@ -10,5 +10,43 @@
   font-family: "Dancing Script";
   src: url(../fonts/Open_Sans/static/OpenSans-Regular.ttf);
 }
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+}
+
+h1, h2, h3 {
+  font-family: "Nunito Semi-bold", sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+
+h2 {
+  font-size: 1.625rem;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+  small {
+    font-size: 1rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
