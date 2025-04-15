@@ -1,0 +1,39 @@
+@use '../abstract/variables' as *;
+@use 'sass:color';
+
+.bouton,
+.bouton-secondaire {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  font-family: $police-secondaire;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+// 🌿 Bouton principal vert
+.bouton,
+.button {
+  background-color: $couleur-secondaire;
+  color: white;
+
+  &:hover {
+    background-color: color.adjust($couleur-secondaire, $lightness: -10%);
+    transform: scale(1.03);
+  }
+}
+
+// 🌸 Bouton secondaire (ex: Lire Plus)
+.bouton-secondaire {
+  background-color: $couleur-accent;
+  color: white;
+
+  &:hover {
+    background-color: color.adjust($couleur-accent, $lightness: 10%);
+  }
+}
