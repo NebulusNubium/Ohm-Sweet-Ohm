@@ -3,104 +3,151 @@
 @use "../base/responsive";
 #body-article {
     background-color: #FFECEB;
-}
 
-// heading de la page article 
-.article-img-container{
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    rotate: 180deg;
-    top: 72.5%;
-    left: 0;
-    transform: rotateZ(-7.5deg);
-    img {
-        z-index: 1;
-        width: 100vw;
-        rotate: 180deg;
-        transform: rotateX(180deg);
-        opacity: 70%;
+    main {
+        overflow: hidden;
     }
-
 }
 
-.article-heading {
+//  decoration de la banner 
+#banner-decoration {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-self: center;
-    width: 1527px;
-    height: 196px;
-    background-color: white;
-    border-top-left-radius: 150px;
-    border-bottom-right-radius: 150px;
-    border-bottom-left-radius: 15px;
-    border-top-right-radius: 15px;
-    z-index: -2;
+    width: 100%;
+    height: 20vh;
+    margin: 0;
+    overflow: hidden;
+     .banner-img-container{
+         position: absolute;
+         bottom:  -50%;
+         left: -1%;
+         rotate: 180deg;
+         transform: rotateZ(-7.5deg);
+         z-index: 1;
+         img {
+             width: 100vw;
+             rotate: 180deg;
+             transform: rotateX(180deg);
+             opacity: 70%;
+         }
+     }
 }
 
-// section histoire de la création 
+//  heading de la page article 
 
-#history { // box de la section
-    margin: 0;
-    padding: 0;
-    .history-heading { // box headind de la section
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        justify-self: center;
-        width: 963.39px;
-        height: 231px;
-        background-color: rgba(41, 142, 137, 0.7);
-        border-top-left-radius: 150px;
-        border-bottom-right-radius: 150px;
-        .title-deco-container { // deco de la box heading
+
+ .article-heading {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     justify-self: center;
+     width: 80%;
+     height: 196px;
+     background-color: white;
+     border-top-left-radius: 150px;
+     border-bottom-right-radius: 150px;
+     border-bottom-left-radius: 15px;
+     border-top-right-radius: 15px;
+     z-index: -2;
+ }
+
+//   section histoire de la création 
+
+ #history {  // box de la section
+     margin: 0;
+     margin-top: 20%;
+     padding: 0;
+     .history-heading {  // box headind de la section
+         position: relative;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         justify-self: center;
+         width: 75%;
+         height: 231px;
+         background-color: rgba(41, 142, 137, 0.7);
+         border-top-left-radius: 150px;
+         border-bottom-right-radius: 150px;
+        .title-deco-container {  // deco de la box heading
             position: absolute;
-            width: 152.8%;
+            width: 100%;
             height: 100%;
             img { // image de la deco
+                 width: 100%;
+                 position: absolute;
+                 left: -11.10%;
+                 top: -54.1%;
+                 width: 32.5%;
+                 rotate: 134deg;
+                 opacity: 90%;
+            }
+        }
+        .title-deco-container2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            img {
                 width: 100%;
                 position: absolute;
-                left: 0.2%;
-                top: -98.9%;
-                width: 100%;
+                left: 78.6%;
+                top: -34%;
+                width: 32.5%;
+                rotate: -45deg;
+                opacity: 90%;
             }
         }
     }
 }
-// partie content section histoire 
-.history-content-container { // box general de cette partie 
-    display: flex;
-    justify-self: center;
-    width: 1631px;
-    height: 650px;
-    background-color: #D9D9D9;
-    border-radius: 500px;
+
+//   partie content section histoire 
+ .history-content-container { // box general de cette partie 
+     display: flex;
+     justify-self: center;
+     width: 90%;
+     height: 650px;
+     background-color: #D9D9D9;
+     border-radius: 500px;
+     margin-top: 20%;
+     .history-img-container { // box de l'image 
+         display: flex;
+         align-self: center;
+         margin-left: 5%;
+         width: 20%;
+         height: 50%;
+         background-color: #FFECEB;
+         border-radius: 50%;
+         background-image: url(../img/image-articles.png);
+         background-size: cover;
+         background-position: center;
+         border: 3px solid white;
+     }
+     .history-content { // box du paragraphe
+         align-content: center;
+         justify-content: center;
+         width: 50%;
+         height: 100%;
+         margin-left: 2.5%;
+         p {
+             line-height: 35px;
+             text-align: center;
+         }
+     }
+ }   
+
+  // section main content 
+
+ .main-content-container {
     margin-top: 20%;
-    .history-img-container { // box de l'image 
-        display: flex;
-        align-self: center;
-        margin-left: 5%;
-        width: 537px;
-        height: 537px;
-        background-color: #FFECEB;
-        border-radius: 50%;
-        background-image: url(../img/image-articles.png);
-        background-size: cover;
-        background-position: center;
-        border: 3px solid white;
-    }
-    .history-content { // box du paragraphe
-        align-content: center;
-        justify-content: center;
-        width: 50%;
+     .box-content-half {
+         width: 110%;
+         height: 500px;
+         background-color: white;
+         rotate: -10deg;
+     }
+     .box-half-background {
+        width: 100%;
         height: 100%;
-        margin-left: 2.5%;
-        p {
-            line-height: 35px;
-            text-align: center;
-        }
-    }
-}   
+        background-color: white;
+        margin-top: -8%;
+     }
+ }

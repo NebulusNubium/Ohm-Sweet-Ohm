@@ -33,10 +33,6 @@ h2 {
   font-size: 1.625rem;
 }
 
-section:not(#banner) {
-  margin: 10%;
-}
-
 a {
   text-decoration: none;
   color: black;
@@ -169,18 +165,26 @@ a {
 #body-article {
   background-color: #FFECEB;
 }
-
-.article-img-container {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  rotate: 180deg;
-  top: 72.5%;
-  left: 0;
-  transform: rotateZ(-7.5deg);
+#body-article main {
+  overflow: hidden;
 }
-.article-img-container img {
+
+#banner-decoration {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  margin: 0;
+  overflow: hidden;
+}
+#banner-decoration .banner-img-container {
+  position: absolute;
+  bottom: -50%;
+  left: -1%;
+  rotate: 180deg;
+  transform: rotateZ(-7.5deg);
   z-index: 1;
+}
+#banner-decoration .banner-img-container img {
   width: 100vw;
   rotate: 180deg;
   transform: rotateX(180deg);
@@ -193,7 +197,7 @@ a {
   align-items: center;
   justify-content: center;
   justify-self: center;
-  width: 1527px;
+  width: 80%;
   height: 196px;
   background-color: white;
   border-top-left-radius: 150px;
@@ -205,6 +209,7 @@ a {
 
 #history {
   margin: 0;
+  margin-top: 20%;
   padding: 0;
 }
 #history .history-heading {
@@ -213,7 +218,7 @@ a {
   align-items: center;
   justify-content: center;
   justify-self: center;
-  width: 963.39px;
+  width: 75%;
   height: 231px;
   background-color: rgba(41, 142, 137, 0.7);
   border-top-left-radius: 150px;
@@ -221,21 +226,37 @@ a {
 }
 #history .history-heading .title-deco-container {
   position: absolute;
-  width: 152.8%;
+  width: 100%;
   height: 100%;
 }
 #history .history-heading .title-deco-container img {
   width: 100%;
   position: absolute;
-  left: 0.2%;
-  top: -98.9%;
+  left: -11.1%;
+  top: -54.1%;
+  width: 32.5%;
+  rotate: 134deg;
+  opacity: 90%;
+}
+#history .history-heading .title-deco-container2 {
+  position: absolute;
   width: 100%;
+  height: 100%;
+}
+#history .history-heading .title-deco-container2 img {
+  width: 100%;
+  position: absolute;
+  left: 78.6%;
+  top: -34%;
+  width: 32.5%;
+  rotate: -45deg;
+  opacity: 90%;
 }
 
 .history-content-container {
   display: flex;
   justify-self: center;
-  width: 1631px;
+  width: 90%;
   height: 650px;
   background-color: #D9D9D9;
   border-radius: 500px;
@@ -245,8 +266,8 @@ a {
   display: flex;
   align-self: center;
   margin-left: 5%;
-  width: 537px;
-  height: 537px;
+  width: 20%;
+  height: 50%;
   background-color: #FFECEB;
   border-radius: 50%;
   background-image: url(../img/image-articles.png);
@@ -264,6 +285,22 @@ a {
 .history-content-container .history-content p {
   line-height: 35px;
   text-align: center;
+}
+
+.main-content-container {
+  margin-top: 20%;
+}
+.main-content-container .box-content-half {
+  width: 110%;
+  height: 500px;
+  background-color: white;
+  rotate: -10deg;
+}
+.main-content-container .box-half-background {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  margin-top: -8%;
 }
 
 /*# sourceMappingURL=style.css.map */
