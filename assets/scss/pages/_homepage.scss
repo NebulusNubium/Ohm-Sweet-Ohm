@@ -33,15 +33,22 @@
     .articles-container {
         display: grid;
         justify-content: center;
-        grid-template-rows: 50vh 50vh;
+        grid-template-rows: 40vh 40vh;
         grid-template-columns: 20vw 20vw 20vw;
         gap: 12rem;
         .article {
             background-color: white;
-            padding: 2rem;
+            padding: 0.5rem;
+            border-radius: 10px;
+            overflow-x: hidden;
+            text-align: center;
             .image-article {
-                width: 100%;
-                img {width: 100%;}
+                width: 110%;
+                margin: -0.5rem;
+                img {width: 100%;                 border-bottom-left-radius: 0;}
+            }
+            h3 {
+                color: variables.$couleur-secondaire;
             }
         }
     }
