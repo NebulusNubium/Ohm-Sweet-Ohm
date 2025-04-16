@@ -21,7 +21,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 h2 {
@@ -46,6 +46,7 @@ a {
   color: white;
   background-image: url(../img/background_image.png);
   background-size: cover;
+  background-position: center;
   height: 90vh;
 }
 
@@ -105,6 +106,14 @@ a {
 }
 .bouton-secondaire:hover {
   color: rgb(255, 70.4965034965, 61);
+}
+
+#banner h1 {
+  padding-top: 10%;
+}
+#banner p {
+  font-size: 44px;
+  padding-top: 7%;
 }
 
 @media screen and (max-width: 768px) {
