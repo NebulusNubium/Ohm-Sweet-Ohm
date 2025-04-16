@@ -30,10 +30,10 @@
 
 // 🌸 Bouton secondaire (ex: Lire Plus)
 .bouton-secondaire {
-  background-color: $couleur-accent;
-  color: white;
+  color: $couleur-accent;
+  transition: color 0.3s ease;
 
   &:hover {
-    background-color: color.adjust($couleur-accent, $lightness: 10%);
+    color: color.adjust($couleur-accent, $lightness: -10%);
   }
 }
