@@ -17,13 +17,15 @@ h1 {
 h2 {
     font-size: 3.25rem;
 }
-h2 {
-    font-size: 1.625rem;
+h3 {
+    font-size: 1.5rem;
 }
-
+p {font-size: 20px;}
 section:not(#banner) { 
     margin: 10%;
 }
 
 a {text-decoration: none;
-    color: black;}
+    color: black;
+    font-size: 20px;}
+    

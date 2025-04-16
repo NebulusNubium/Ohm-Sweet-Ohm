@@ -29,8 +29,12 @@ h2 {
   font-size: 3.25rem;
 }
 
-h2 {
-  font-size: 1.625rem;
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 20px;
 }
 
 section:not(#banner) {
@@ -40,6 +44,7 @@ section:not(#banner) {
 a {
   text-decoration: none;
   color: black;
+  font-size: 20px;
 }
 
 #header {
@@ -134,8 +139,8 @@ a {
 #conseils .articles-container {
   display: grid;
   justify-content: center;
-  grid-template-rows: 40vh 40vh;
-  grid-template-columns: 20vw 20vw 20vw;
+  grid-template-rows: 50vh 50vh;
+  grid-template-columns: 23vw 23vw 23vw;
   gap: 12rem;
 }
 #conseils .articles-container .article {
@@ -145,8 +150,11 @@ a {
   overflow-x: hidden;
   text-align: center;
 }
+#conseils .articles-container .article a {
+  padding: 0;
+}
 #conseils .articles-container .article .image-article {
-  width: 110%;
+  width: 130%;
   margin: -0.5rem;
 }
 #conseils .articles-container .article .image-article img {
@@ -198,6 +206,17 @@ a {
   }
   small {
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3.25rem;
+  }
+  h3 {
+    font-size: 1.5rem;
   }
 }
 
