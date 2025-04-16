@@ -4,6 +4,7 @@ body {
     font-family: variables.$police-principale;
     font-size: 1.25rem;
     margin: 0;
+    background-color: variables.$couleur-principale;
 }
 
 h1, h2, h3 {
@@ -21,7 +22,7 @@ h2 {
 }
 
 section:not(#banner) { 
-    margin: 5%;
+    margin: 10%;
 }
 
 a {text-decoration: none;

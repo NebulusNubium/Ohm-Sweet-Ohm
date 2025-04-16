@@ -28,3 +28,21 @@
         }
     }
 }
+
+#conseils {
+    .articles-container {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 50vh 50vh;
+        grid-template-columns: 20vw 20vw 20vw;
+        gap: 12rem;
+        .article {
+            background-color: white;
+            padding: 2rem;
+            .image-article {
+                width: 100%;
+                img {width: 100%;}
+            }
+        }
+    }
+}
