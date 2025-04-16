@@ -1,1 +1,106 @@
 @use "../abstract/variables";
+@use "../base/base";
+@use "../base/responsive";
+#body-article {
+    background-color: #FFECEB;
+}
+
+// heading de la page article 
+.article-img-container{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    rotate: 180deg;
+    top: 72.5%;
+    left: 0;
+    transform: rotateZ(-7.5deg);
+    img {
+        z-index: 1;
+        width: 100vw;
+        rotate: 180deg;
+        transform: rotateX(180deg);
+        opacity: 70%;
+    }
+
+}
+
+.article-heading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    width: 1527px;
+    height: 196px;
+    background-color: white;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    z-index: -2;
+}
+
+// section histoire de la création 
+
+#history { // box de la section
+    margin: 0;
+    padding: 0;
+    .history-heading { // box headind de la section
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        width: 963.39px;
+        height: 231px;
+        background-color: rgba(41, 142, 137, 0.7);
+        border-top-left-radius: 150px;
+        border-bottom-right-radius: 150px;
+        .title-deco-container { // deco de la box heading
+            position: absolute;
+            width: 152.8%;
+            height: 100%;
+            img { // image de la deco
+                width: 100%;
+                position: absolute;
+                left: 0.2%;
+                top: -98.9%;
+                width: 100%;
+            }
+        }
+    }
+}
+// partie content section histoire 
+.history-content-container { // box general de cette partie 
+    display: flex;
+    justify-self: center;
+    width: 1631px;
+    height: 650px;
+    background-color: #D9D9D9;
+    border-radius: 500px;
+    margin-top: 20%;
+    .history-img-container { // box de l'image 
+        display: flex;
+        align-self: center;
+        margin-left: 5%;
+        width: 537px;
+        height: 537px;
+        background-color: #FFECEB;
+        border-radius: 50%;
+        background-image: url(../img/image-articles.png);
+        background-size: cover;
+        background-position: center;
+        border: 3px solid white;
+    }
+    .history-content { // box du paragraphe
+        align-content: center;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        margin-left: 2.5%;
+        p {
+            line-height: 35px;
+            text-align: center;
+        }
+    }
+}   
