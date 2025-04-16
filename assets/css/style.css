@@ -13,7 +13,6 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
-  color: #FFECEB;
   margin: 0;
 }
 
@@ -67,6 +66,11 @@ a {
   display: flex;
   gap: 10rem;
   width: 70%;
+}
+#header ul li:after {
+  content: "";
+  height: 2px;
+  color: #00BF96;
 }
 
 .bouton,

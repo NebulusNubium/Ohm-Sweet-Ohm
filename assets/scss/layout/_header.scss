@@ -1,4 +1,4 @@
-
+@use "../abstract/variables";
 
 #header {
     display: flex;
@@ -14,6 +14,10 @@
         display: flex;
         gap: 10rem;
         width: 70%;
-
+        li:after {
+            content: "";
+            height: 2px;
+            color: variables.$couleur-secondaire;
+        }
     }
 }
