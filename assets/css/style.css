@@ -41,15 +41,6 @@ a {
   color: black;
 }
 
-#banner {
-  text-align: center;
-  color: white;
-  background-image: url(../img/background_image.png);
-  background-size: cover;
-  background-position: center;
-  height: 90vh;
-}
-
 #header {
   display: flex;
   align-items: center;
@@ -108,12 +99,24 @@ a {
   color: rgb(255, 70.4965034965, 61);
 }
 
+#banner {
+  text-align: center;
+  color: white;
+  background-image: url(../img/background_image.png);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
 #banner h1 {
   padding-top: 10%;
 }
 #banner p {
   font-size: 44px;
   padding-top: 7%;
+}
+
+#carroussel .carroussel-container .carroussel-article {
+  background-image: url(../img/image-relax-1.png);
 }
 
 @media screen and (max-width: 768px) {
