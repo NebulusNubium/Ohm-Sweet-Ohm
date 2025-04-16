@@ -86,11 +86,11 @@ a {
 }
 
 .bouton-secondaire {
-  background-color: #FF7770;
-  color: white;
+  color: #FF7770;
+  transition: color 0.3s ease;
 }
 .bouton-secondaire:hover {
-  background-color: rgb(255, 167.5034965035, 163);
+  color: rgb(255, 70.4965034965, 61);
 }
 
 @media screen and (max-width: 768px) {
