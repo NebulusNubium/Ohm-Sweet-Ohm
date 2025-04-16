@@ -69,6 +69,40 @@ a {
   width: 70%;
 }
 
+.bouton,
+.bouton-secondaire {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  font-family: "Nunito Semi-bold", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.bouton,
+.button {
+  background-color: #00BF96;
+  color: white;
+}
+.bouton:hover,
+.button:hover {
+  background-color: rgb(0, 140, 109.9476439791);
+  transform: scale(1.03);
+}
+
+.bouton-secondaire {
+  background-color: #FF7770;
+  color: white;
+}
+.bouton-secondaire:hover {
+  background-color: rgb(255, 167.5034965035, 163);
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 3rem;
