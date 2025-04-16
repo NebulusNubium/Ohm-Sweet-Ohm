@@ -14,6 +14,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
   color: #FFECEB;
+  margin: 0;
 }
 
 h1, h2, h3 {
@@ -52,11 +53,11 @@ a {
 #header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 3rem;
+  justify-content: space-around;
+  margin-bottom: -4%;
 }
 #header .logo-top {
-  width: 20%;
+  width: 8%;
 }
 #header .logo-top img {
   width: 100%;
@@ -64,10 +65,8 @@ a {
 #header ul {
   list-style: none;
   display: flex;
-  gap: 3rem;
-}
-#header ul li {
-  width: 25%;
+  gap: 10rem;
+  width: 70%;
 }
 
 @media screen and (max-width: 768px) {
