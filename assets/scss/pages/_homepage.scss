@@ -108,5 +108,20 @@
         margin-bottom: 1rem;
         padding-bottom: 10rem;
         border-radius: 15px;
+        ul {
+            list-style: none;
+            font-family: variables.$police-accent;
+            li {
+                display: inline-block;
+                padding: 1rem;
+                border: 2px solid variables.$couleur-accent;
+                border-radius: 15px;
+                background-color: rgba($color: #ffffff, $alpha: 0.45);
+                width: 80%;
+                text-align: center;
+                font-size: 1.5rem;
+                margin-top: 2rem;
+            }
+        }
     }
 }
