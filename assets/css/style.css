@@ -176,7 +176,7 @@ footer {
   justify-content: center;
   margin-top: 3rem;
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
