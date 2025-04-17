@@ -1,6 +1,12 @@
 //Carroussel
 
 //exercice interactif
+const demontration = document.getElementsByClassName('demonstration')
+const cercle = document.querySelector('.cercle')
+
+demonstration.addEventListener('click', function({
+  
+}))
 
 //journal
 const form = document.querySelector('.input-container form');
