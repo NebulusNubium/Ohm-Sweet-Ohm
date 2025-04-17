@@ -220,6 +220,9 @@ a {
 .journal-container .vos-ecrits ul {
   list-style: none;
   font-family: "Dancing Script";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .journal-container .vos-ecrits ul li {
   display: inline-block;
