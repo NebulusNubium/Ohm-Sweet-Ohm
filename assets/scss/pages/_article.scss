@@ -3,10 +3,8 @@
 @use "../base/responsive";
 #body-article {
     background-color: #FFECEB;
-
-    main {
-        overflow: hidden;
-    }
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 //  decoration de la banner 
@@ -124,7 +122,7 @@
      .history-content { // box du paragraphe
          align-content: center;
          justify-content: center;
-         width: 50%;
+         width: 60%;
          height: 100%;
          margin-left: 2.5%;
          p {
@@ -134,20 +132,132 @@
      }
  }   
 
-  // section main content 
+//  section effet style half page 
+.half-style {
+    .half-container {
+        margin-top: 20%;
+        .box-content-half {
+            position: absolute;
+            width: 110%;
+            height: 500px;
+            background-color: white;
+            rotate: -9.1deg;
+        }
+        .box-half-background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            margin-top: 15%;
+        }
+    }
+    .half-deco-container {
+        position: relative;
+        .half-img-container {
+            position: absolute;
+            bottom: -380px;
+            left: -10%;
+            rotate: 180deg;
+            transform: rotateZ(-1.5deg);
+            z-index: 1;
+            width: 125%;
+            z-index: -1;
+            img {
+                width: 100%;
+                rotate: 180deg;
+                transform: rotateX(--180deg);
+                opacity: 70%;
+            }
+        }
+    }
+}
 
- .main-content-container {
-    margin-top: 20%;
-     .box-content-half {
-         width: 110%;
-         height: 500px;
-         background-color: white;
-         rotate: -10deg;
-     }
-     .box-half-background {
-        width: 100%;
+  // section main content 
+ 
+
+#main-content {
+    position: relative; 
+    .main-content-container {
+        .main-content-heading {
+            position: absolute;
+            top: -89.22%;
+            left: 12.5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-self: center;
+            width: 75%;
+            height: 231px;
+            background-color: rgba(41, 142, 137, 0.9);
+            border-top-left-radius: 150px;
+            border-bottom-right-radius: 150px;
+        }
+        .main-deco-container {  // deco de la box heading
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            img { // image de la deco
+                 width: 100%;
+                 position: absolute;
+                 left: -11.10%;
+                 top: -54.1%;
+                 width: 32.5%;
+                 rotate: 134deg;
+                 opacity: 90%;
+            }
+        }
+        .main-deco-container2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                position: absolute;
+                left: 78.6%;
+                top: -34%;
+                width: 32.5%;
+                rotate: -45deg;
+                opacity: 90%;
+            }
+        }
+    }
+}
+
+.main-content-cards-container { // box general de cette partie 
+    display: flex;
+    justify-self: center;
+    justify-content: flex-end;
+    width: 90%;
+    height: 650px;
+    background-color: #D9D9D9;
+    border-radius: 500px;
+    margin-top: 45%;
+    .main-img-container { // box de l'image 
+        display: flex;
+        align-self: center;
+        margin-right: 5%;
+        width: 20%;
+        height: 50%;
+        background-color: #FFECEB;
+        border-radius: 50%;
+        background-image: url(../img/image-articles.png);
+        background-size: cover;
+        background-position: center;
+        border: 3px solid white;
+    }
+    .main-card-content { // box du paragraphe
+        align-content: center;
+        justify-content: center;
+        width: 60%;
         height: 100%;
-        background-color: white;
-        margin-top: -8%;
-     }
- }
+        margin-right: 2.5%;
+        p {
+            line-height: 35px;
+            text-align: center;
+        }
+    }
+}   
+
+
+
+ 
