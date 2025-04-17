@@ -7,3 +7,114 @@ h3 { font-size: 1.5rem; }
 p { font-size: 1.25rem; }
 small { font-size: 1rem; }
 }
+
+
+
+// responsive de la page d'article 1 
+#body-article {
+    @media screen and (max-width: 1440px) {
+        #banner-decoration {
+             .banner-img-container{
+                 position: absolute;
+                 bottom:  -30%;
+                 left: -1%;
+                 rotate: 180deg;
+                 transform: rotateZ(-7.5deg);
+                 z-index: 1;
+
+             }
+        }
+        // section histoire 
+        #history {  // box de la section
+            .history-heading {  // box heading de la section
+               .title-deco-container {  // deco de la box heading
+                   position: absolute;
+                   width: 100%;
+                   height: 100%;
+                   img { // image de la deco
+                        width: 100%;
+                        position: absolute;
+                        left: -10.60%;
+                        top: -35.1%;
+                        width: 32.5%;
+                        rotate: 134deg;
+                        opacity: 90%;
+                   }
+               }
+               .title-deco-container2 {
+                   position: absolute;
+                   width: 100%;
+                   height: 100%;
+                   img {
+                       width: 100%;
+                       position: absolute;
+                       left: 77.9%;
+                       top: -8.3%;
+                       width: 32.5%;
+                       rotate: -45deg;
+                       opacity: 90%;
+                   }
+               }
+           }
+       }
+        // section half 
+        .half-style {
+            .half-container {
+                margin-top: 20%;
+                .box-content-half {
+                    position: absolute;
+                    width: 110%;
+                    height:350px;
+                    background-color: white;
+                    rotate: -9.1deg;
+                }
+            }
+            .half-deco-container {
+                .half-img-container {
+                    bottom: -280px;
+                }
+            }
+        }
+
+
+    //    section main content 
+        #main-content {
+            .main-content-container {
+                .main-content-heading {
+                    position: absolute;
+                    top: -250.4px;
+                    left: 12.5%;
+                }
+                .main-deco-container {  // deco de la box heading
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    img { // image de la deco
+                        width: 100%;
+                        position: absolute;
+                        left: -10.65%;
+                        top: -35%;
+                        width: 32.5%;
+                        rotate: 131deg;
+                        opacity: 90%;
+                    }
+                }
+                .main-deco-container2 {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        position: absolute;
+                        left: 77.6%;
+                        top: -5%;
+                        width: 32.5%;
+                        rotate: -45deg;
+                        opacity: 90%;
+                    }
+                }
+            }
+        }
+    }
+} 
+    

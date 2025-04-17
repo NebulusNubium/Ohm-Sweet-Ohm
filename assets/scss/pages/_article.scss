@@ -1,10 +1,10 @@
 @use "../abstract/variables";
 @use "../base/base";
-@use "../base/responsive";
 #body-article {
     background-color: #FFECEB;
     overflow: hidden;
     overflow-y: scroll;
+    background-image: url(../img/dimension.png);
 }
 
 //  decoration de la banner 
@@ -55,7 +55,7 @@
      margin: 0;
      margin-top: 20%;
      padding: 0;
-     .history-heading {  // box headind de la section
+     .history-heading {  // box heading de la section
          position: relative;
          display: flex;
          align-items: center;
@@ -110,8 +110,8 @@
          display: flex;
          align-self: center;
          margin-left: 5%;
-         width: 20%;
-         height: 50%;
+         width: 350px;
+         height: 350px;
          background-color: #FFECEB;
          border-radius: 50%;
          background-image: url(../img/image-articles.png);
@@ -139,16 +139,9 @@
         .box-content-half {
             position: absolute;
             width: 110%;
-            height: 500px;
+            height:350px;
             background-color: white;
             rotate: -9.1deg;
-        }
-        .box-half-background {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: white;
-            margin-top: 15%;
         }
     }
     .half-deco-container {
@@ -176,11 +169,12 @@
  
 
 #main-content {
-    position: relative; 
+    position: relative;
     .main-content-container {
+        position: relative; 
         .main-content-heading {
             position: absolute;
-            top: -89.22%;
+            top: -294.4px;
             left: 12.5%;
             display: flex;
             align-items: center;
@@ -220,44 +214,94 @@
                 opacity: 90%;
             }
         }
+        .main-deco-title {
+            position: absolute;
+            rotate: -75deg;
+            right: -55%;
+            top: 400px;
+            width: 75%;
+            height: auto;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 }
 
 .main-content-cards-container { // box general de cette partie 
     display: flex;
-    justify-self: center;
-    justify-content: flex-end;
-    width: 90%;
-    height: 650px;
-    background-color: #D9D9D9;
-    border-radius: 500px;
-    margin-top: 45%;
-    .main-img-container { // box de l'image 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    margin-top: 30%;
+    background-color: white;
+    .card {
         display: flex;
-        align-self: center;
-        margin-right: 5%;
-        width: 20%;
-        height: 50%;
-        background-color: #FFECEB;
-        border-radius: 50%;
-        background-image: url(../img/image-articles.png);
-        background-size: cover;
-        background-position: center;
-        border: 3px solid white;
-    }
-    .main-card-content { // box du paragraphe
-        align-content: center;
-        justify-content: center;
-        width: 60%;
-        height: 100%;
-        margin-right: 2.5%;
-        p {
-            line-height: 35px;
-            text-align: center;
+        width: 90%;
+        height: 650px;
+        background-color: #D9D9D9;
+        border-radius: 500px;
+        margin-top: 15%;
+        margin-bottom: 5%;
+        .main-card-content { // box du paragraphe
+            align-content: center;
+            justify-content: center;
+            width: 60%;
+            height: 100%;
+            margin-left: 5%;
+            p {
+                line-height: 35px;
+                text-align: center;
+            }
         }
+        .main-img-container { // box de l'image 
+            display: flex;
+            align-self: center;
+            margin-left: 5%;
+            width: 350px;
+            height: 350px;
+            background-color: #FFECEB;
+            border-radius: 50%;
+            background-image: url(../img/image-articles.png);
+            background-size: cover;
+            background-position: center;
+            border: 3px solid white;
+        }
+    }
+    .card:nth-of-type(2) {
+        margin-bottom: 15%;
     }
 }   
 
+
+.card-deco-bottom {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    right: -5%;
+    bottom: 2.5%;
+    img {
+        width: 100%;
+        height: 100%;
+        opacity: 75%;
+    }
+}
+
+.card-deco-bottom2 {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    left: 0;
+    bottom: -15%;
+    transform: rotateY(180deg);
+    img {
+        width: 100%;
+        height: 100%;
+        opacity: 75%;
+    }
+}
 
 
  
