@@ -251,7 +251,52 @@ footer {
   color: rgb(255, 70.4965034965, 61);
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 400px) {
+  #homepage {
+    margin: 0;
+  }
+  #homepage .journal-container .input-container .input {
+    padding-left: 0;
+  }
+  #homepage h1 {
+    font-size: 4rem;
+  }
+  #homepage h2 {
+    font-size: 2.25rem;
+  }
+  #homepage h3 {
+    font-size: 1.8rem;
+  }
+  #homepage #banner {
+    height: 30vh;
+  }
+  #homepage #banner p {
+    font-size: 1rem;
+  }
+  #homepage #exercices {
+    padding: 0;
+  }
+  #homepage #exercices h3 {
+    font-size: 1.5rem;
+  }
+  #homepage #exercices .exercice {
+    width: 100%;
+    padding: 0;
+  }
+  #homepage #exercices .exercice h3 {
+    font-size: 1.5rem;
+  }
+  #homepage #exercices .exercice .exercice-text-container {
+    padding: 10px;
+  }
+  #homepage #exercices .exercice .exercice-text-container h3 {
+    font-size: 1.5rem;
+  }
+  #homepage #exercices .exercice .exercice-text-container p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 1200px) {
   h1 {
     font-size: 5rem;
   }
@@ -261,32 +306,9 @@ footer {
   h3 {
     font-size: 1.5rem;
   }
-  .contact-container {
+  #homepage #conseils .articles-container {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 5rem;
-  }
-  .form-conteneur {
-    max-width: 90%;
-  }
-  .form-conteneur .form-contact {
-    margin-top: 0;
-  }
-  .ressources {
-    flex-direction: column;
-  }
-  .ressources .ressources-container {
-    order: 2;
-  }
-  .footer-bottom {
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .footer-bottom p {
-    order: 2;
-  }
-  .footer-bottom .reseaux a img {
-    width: 20vw;
   }
   #homepage header {
     margin-bottom: -10%;
@@ -301,14 +323,41 @@ footer {
   #homepage .nav {
     display: none;
   }
-  #homepage .articles-container {
-    display: flex;
-    flex-direction: column;
-  }
   #homepage .input {
     padding-left: 5rem;
   }
 }
+.contact-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.form-conteneur {
+  max-width: 90%;
+}
+.form-conteneur .form-contact {
+  margin-top: 0;
+}
+
+.ressources {
+  flex-direction: column;
+}
+.ressources .ressources-container {
+  order: 2;
+}
+
+.footer-bottom {
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer-bottom p {
+  order: 2;
+}
+.footer-bottom .reseaux a img {
+  width: 20vw;
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 3rem;
