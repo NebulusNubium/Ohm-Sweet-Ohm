@@ -65,6 +65,9 @@ a {
 #header .logo-top img {
   width: 100%;
 }
+#header .menu {
+  display: none;
+}
 #header ul {
   list-style: none;
   display: flex;
@@ -486,6 +489,26 @@ footer {
   .footer-bottom .reseaux a img {
     width: 20vw;
   }
+  #homepage header {
+    margin-bottom: -10%;
+  }
+  #homepage .menu {
+    display: inline-block;
+    width: 5%;
+  }
+  #homepage .logo-top {
+    width: 15%;
+  }
+  #homepage .nav {
+    display: none;
+  }
+  #homepage .articles-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #homepage .input {
+    padding-left: 5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   h1 {
@@ -502,6 +525,26 @@ footer {
   }
   small {
     font-size: 1rem;
+  }
+  #homepage header {
+    margin-bottom: -10%;
+  }
+  #homepage .menu {
+    display: inline-block;
+    width: 5%;
+  }
+  #homepage .logo-top {
+    width: 15%;
+  }
+  #homepage .nav {
+    display: none;
+  }
+  #homepage .articles-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #homepage .input {
+    padding-left: 3rem;
   }
 }
 @media screen and (max-width: 1023px) {
