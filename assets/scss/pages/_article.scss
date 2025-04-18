@@ -1,9 +1,19 @@
 @use "../abstract/variables";
 @use "../base/base";
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
 #body-article {
-    background-color: #FFECEB;
-    overflow: hidden;
     overflow-y: scroll;
+    background-color: #FFECEB;
     background-image: url(../img/dimension.png);
 }
 
@@ -22,7 +32,7 @@
          transform: rotateZ(-7.5deg);
          z-index: 1;
          img {
-             width: 100vw;
+             width: 99vw;
              rotate: 180deg;
              transform: rotateX(180deg);
              opacity: 70%;
@@ -68,7 +78,7 @@
          border-bottom-right-radius: 150px;
         .title-deco-container {  // deco de la box heading
             position: absolute;
-            width: 100%;
+            width: 99%;
             height: 100%;
             img { // image de la deco
                  width: 100%;
@@ -82,7 +92,7 @@
         }
         .title-deco-container2 {
             position: absolute;
-            width: 100%;
+            width: 99%;
             height: 100%;
             img {
                 width: 100%;
@@ -138,7 +148,7 @@
         margin-top: 20%;
         .box-content-half {
             position: absolute;
-            width: 110%;
+            width: 95%;
             height:350px;
             background-color: white;
             rotate: -9.1deg;
@@ -153,7 +163,7 @@
             rotate: 180deg;
             transform: rotateZ(-1.5deg);
             z-index: 1;
-            width: 125%;
+            width: 95%;
             z-index: -1;
             img {
                 width: 100%;

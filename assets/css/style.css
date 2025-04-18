@@ -161,6 +161,7 @@ a {
     rotate: -9.1deg;
   }
   #body-article .half-style .half-deco-container .half-img-container {
+    overflow-x: hidden;
     bottom: -280px;
   }
   #body-article #main-content .main-content-container .main-content-heading {
@@ -195,6 +196,440 @@ a {
     width: 32.5%;
     rotate: -45deg;
     opacity: 90%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #body-article h1 {
+    font-size: 3rem;
+  }
+  #body-article h2 {
+    font-size: 2rem;
+  }
+  #body-article h3 {
+    font-size: 1.5rem;
+  }
+  #body-article p {
+    font-size: 1.25rem;
+  }
+  #body-article small {
+    font-size: 1rem;
+  }
+  #body-article #banner-decoration .banner-img-container {
+    position: absolute;
+    bottom: 10%;
+  }
+  #body-article #history .history-heading {
+    height: 175px;
+  }
+  #body-article #history .history-heading .title-deco-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  #body-article #history .history-heading .title-deco-container img {
+    width: 100%;
+    position: absolute;
+    left: -9.6%;
+    top: -35.1%;
+    width: 35.5%;
+    rotate: 134deg;
+    opacity: 90%;
+  }
+  #body-article #history .history-heading .title-deco-container2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  #body-article #history .history-heading .title-deco-container2 img {
+    width: 100%;
+    position: absolute;
+    left: 73.2%;
+    top: -9%;
+    width: 35.5%;
+    rotate: -45deg;
+    opacity: 90%;
+  }
+  #body-article #history .history-content-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 1050px;
+  }
+  #body-article #history .history-content-container .history-img-container {
+    margin-top: 2.5%;
+    width: 40%;
+    height: 45%;
+  }
+  #body-article #history .history-content-container .history-content {
+    width: 85%;
+    margin-top: -15%;
+  }
+  #body-article #history .history-content-container .history-content p {
+    margin-top: 0;
+  }
+  #body-article .half-style .half-deco-container .half-img-container {
+    bottom: -200px;
+  }
+  #body-article #main-content .main-content-container .main-content-heading {
+    height: 200px;
+    top: -200.4px;
+    left: 12.5%;
+  }
+  #body-article #main-content .main-content-container .main-deco-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  #body-article #main-content .main-content-container .main-deco-container img {
+    width: 100%;
+    position: absolute;
+    left: -10.25%;
+    top: -26%;
+    width: 35.5%;
+    rotate: 131deg;
+    opacity: 90%;
+  }
+  #body-article #main-content .main-content-container .main-deco-container2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  #body-article #main-content .main-content-container .main-deco-container2 img {
+    width: 100%;
+    position: absolute;
+    left: 73.6%;
+    top: 3%;
+    width: 35.5%;
+    rotate: -50deg;
+    opacity: 90%;
+  }
+  #body-article #main-content .main-content-cards-container .card {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1050px;
+  }
+  #body-article #main-content .main-content-cards-container .card .main-img-container {
+    margin-bottom: 2.5%;
+    width: 45%;
+    height: 65%;
+  }
+  #body-article #main-content .main-content-cards-container .card .main-card-content {
+    width: 75%;
+    margin-bottom: -9.5%;
+    margin-left: -1%;
+  }
+  #body-article #main-content .main-content-cards-container .card .main-card-content p {
+    line-height: 28px;
+    margin-top: 0;
+  }
+  #body-article #main-content .main-content-cards-container .card-deco-bottom2 {
+    top: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #body-article #banner-decoration .banner-img-container {
+    position: absolute;
+    bottom: 33%;
+  }
+  #body-article .article-heading h2 {
+    width: 75%;
+    text-align: center;
+  }
+  #body-article #history .history-heading {
+    height: 175px;
+  }
+  #body-article #history .history-heading .title-deco-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  #body-article #history .history-heading .title-deco-container img {
+    width: 100%;
+    position: absolute;
+    left: -10.6%;
+    top: -35.1%;
+    width: 45.5%;
+    rotate: 134deg;
+    opacity: 90%;
+  }
+  #body-article #history .history-heading .title-deco-container2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  #body-article #history .history-heading .title-deco-container2 img {
+    width: 100%;
+    position: absolute;
+    left: 66.2%;
+    top: -9%;
+    width: 45.5%;
+    rotate: -45deg;
+    opacity: 90%;
+  }
+  #body-article #history .history-content-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 1050px;
+  }
+  #body-article #history .history-content-container .history-img-container {
+    margin-top: 2.5%;
+    width: 45%;
+    height: 40%;
+  }
+  #body-article #history .history-content-container .history-content {
+    width: 85%;
+    margin-top: -15%;
+  }
+  #body-article #history .history-content-container .history-content p {
+    margin-top: 0;
+  }
+  #body-article #main-content .main-content-container .main-content-heading {
+    height: 200px;
+    top: -175.4px;
+    left: 12.5%;
+  }
+  #body-article #main-content .main-content-container .main-content-heading h2 {
+    width: 50%;
+    text-align: center;
+  }
+  #body-article #main-content .main-content-container .main-deco-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  #body-article #main-content .main-content-container .main-deco-container img {
+    width: 100%;
+    position: absolute;
+    left: -12.25%;
+    top: -26%;
+    width: 45.5%;
+    rotate: 131deg;
+    opacity: 90%;
+  }
+  #body-article #main-content .main-content-container .main-deco-container2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  #body-article #main-content .main-content-container .main-deco-container2 img {
+    width: 100%;
+    position: absolute;
+    left: 67.6%;
+    top: 3%;
+    width: 45.5%;
+    rotate: -50deg;
+    opacity: 90%;
+  }
+  #body-article #main-content .main-content-cards-container .card {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1050px;
+  }
+  #body-article #main-content .main-content-cards-container .card .main-img-container {
+    margin-bottom: 2.5%;
+    width: 45%;
+    height: 45%;
+  }
+  #body-article #main-content .main-content-cards-container .card .main-card-content {
+    width: 65%;
+    margin-bottom: -9.5%;
+    margin-left: -1%;
+  }
+  #body-article #main-content .main-content-cards-container .card .main-card-content p {
+    line-height: 28px;
+    margin-top: 0;
+  }
+  #body-article #main-content .main-content-cards-container .card-deco-bottom2 {
+    top: 90%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #body-article #banner-decoration .banner-img-container {
+    position: absolute;
+    bottom: 63%;
+  }
+  #body-article .article-heading {
+    width: 95%;
+  }
+  #body-article .article-heading h2 {
+    width: 75%;
+    text-align: center;
+    font-size: 1.75rem;
+  }
+  #body-article #history .history-heading {
+    height: 175px;
+    width: 95%;
+  }
+  #body-article #history .history-heading h2 {
+    width: 75%;
+    text-align: center;
+    font-size: 1.75rem;
+  }
+  #body-article #history .history-heading .title-deco-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  #body-article #history .history-heading .title-deco-container img {
+    width: 100%;
+    position: absolute;
+    left: -10.6%;
+    top: -21.1%;
+    width: 52.5%;
+    rotate: 134deg;
+    opacity: 90%;
+  }
+  #body-article #history .history-heading .title-deco-container2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  #body-article #history .history-heading .title-deco-container2 img {
+    width: 100%;
+    position: absolute;
+    left: 56.2%;
+    top: 12%;
+    width: 52.5%;
+    rotate: -45deg;
+    opacity: 90%;
+  }
+  #body-article #history .history-content-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 1050px;
+    margin-bottom: 50%;
+  }
+  #body-article #history .history-content-container .history-img-container {
+    margin-top: 2.5%;
+    width: 55%;
+    height: 25%;
+    margin-bottom: -15%;
+  }
+  #body-article #history .history-content-container .history-content {
+    width: 85%;
+    margin-top: -15%;
+  }
+  #body-article #history .history-content-container .history-content p {
+    margin-top: 0;
+    font-size: 0.85rem;
+  }
+  #body-article #main-content .main-content-container .main-content-heading {
+    height: 170px;
+    top: -115.4px;
+    left: 2.2%;
+    width: 95%;
+    margin: 0 auto;
+  }
+  #body-article #main-content .main-content-container .main-content-heading h2 {
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  #body-article #main-content .main-content-container .main-deco-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  #body-article #main-content .main-content-container .main-deco-container img {
+    width: 100%;
+    position: absolute;
+    left: -11.25%;
+    top: -22%;
+    width: 52.5%;
+    rotate: 131deg;
+    opacity: 90%;
+  }
+  #body-article #main-content .main-content-container .main-deco-container2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  #body-article #main-content .main-content-container .main-deco-container2 img {
+    width: 100%;
+    position: absolute;
+    left: 56.6%;
+    top: 10%;
+    width: 52.5%;
+    rotate: -47deg;
+    opacity: 90%;
+  }
+  #body-article #main-content .main-content-container .main-deco-title {
+    position: absolute;
+    rotate: -75deg;
+    right: -50%;
+    top: 250px;
+    width: 100%;
+    height: auto;
+  }
+  #body-article #main-content .main-content-container .main-deco-title img {
+    width: 100%;
+    height: 100%;
+  }
+  #body-article #main-content .main-content-cards-container {
+    padding-top: 25%;
+  }
+  #body-article #main-content .main-content-cards-container .card {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1050px;
+  }
+  #body-article #main-content .main-content-cards-container .card .main-img-container {
+    margin-bottom: 2.5%;
+    width: 45%;
+    height: 22.5%;
+    margin-top: -15%;
+  }
+  #body-article #main-content .main-content-cards-container .card .main-card-content {
+    width: 75%;
+    margin-bottom: -9.5%;
+    margin-left: -1%;
+  }
+  #body-article #main-content .main-content-cards-container .card .main-card-content p {
+    line-height: 28px;
+    margin-top: 0;
+    font-size: 1rem;
+  }
+  #body-article #main-content .main-content-cards-container .card-deco-bottom {
+    top: 50%;
+    height: 15%;
+    width: 100%;
+  }
+  #body-article #main-content .main-content-cards-container .card-deco-bottom2 {
+    width: 90%;
+    height: 20%;
+    top: 90%;
   }
 }
 
@@ -247,10 +682,21 @@ a {
   width: 100%;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 #body-article {
-  background-color: #FFECEB;
-  overflow: hidden;
   overflow-y: scroll;
+  background-color: #FFECEB;
   background-image: url(../img/dimension.png);
 }
 
@@ -270,7 +716,7 @@ a {
   z-index: 1;
 }
 #banner-decoration .banner-img-container img {
-  width: 100vw;
+  width: 99vw;
   rotate: 180deg;
   transform: rotateX(180deg);
   opacity: 70%;
@@ -311,7 +757,7 @@ a {
 }
 #history .history-heading .title-deco-container {
   position: absolute;
-  width: 100%;
+  width: 99%;
   height: 100%;
 }
 #history .history-heading .title-deco-container img {
@@ -325,7 +771,7 @@ a {
 }
 #history .history-heading .title-deco-container2 {
   position: absolute;
-  width: 100%;
+  width: 99%;
   height: 100%;
 }
 #history .history-heading .title-deco-container2 img {
@@ -377,7 +823,7 @@ a {
 }
 .half-style .half-container .box-content-half {
   position: absolute;
-  width: 110%;
+  width: 95%;
   height: 350px;
   background-color: white;
   rotate: -9.1deg;
@@ -392,7 +838,7 @@ a {
   rotate: 180deg;
   transform: rotateZ(-1.5deg);
   z-index: 1;
-  width: 125%;
+  width: 95%;
   z-index: -1;
 }
 .half-style .half-deco-container .half-img-container img {
