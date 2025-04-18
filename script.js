@@ -2,32 +2,32 @@
 document.addEventListener('DOMContentLoaded', () => {
   const container = document.querySelector('#carroussel .carroussel-container');
   const slides    = Array.from(container.querySelectorAll('.carroussel-article'));
-  const prevBtn   = container.querySelector('.chevron-left');
-  const nextBtn   = container.querySelector('.chevron-right');
+  const slider    = document.getElementById('slide-range');
   let current     = 0;
 
-  function updateSlides() {
+  // Ajuste la plage max dynamiquement
+  slider.max = slides.length - 1;
+
+  // Mise à jour des classes prev/active/next
+  function updateSlides(index) {
     slides.forEach(slide => slide.classList.remove('prev','active','next'));
 
-    const prevIndex = (current - 1 + slides.length) % slides.length;
-    const nextIndex = (current + 1) % slides.length;
+    const prevIndex = (index - 1 + slides.length) % slides.length;
+    const nextIndex = (index + 1) % slides.length;
 
     slides[prevIndex].classList.add('prev');
-    slides[current].classList.add('active');
+    slides[index].classList.add('active');
     slides[nextIndex].classList.add('next');
   }
 
-  prevBtn.addEventListener('click', () => {
-    current = (current - 1 + slides.length) % slides.length;
-    updateSlides();
+  // Au changement du slider
+  slider.addEventListener('input', (e) => {
+    current = parseInt(e.target.value, 10);
+    updateSlides(current);
   });
 
-  nextBtn.addEventListener('click', () => {
-    current = (current + 1) % slides.length;
-    updateSlides();
-  });
-
-  updateSlides();
+  // Initialisation
+  updateSlides(current);
 });
 
 
