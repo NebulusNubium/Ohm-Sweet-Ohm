@@ -95,3 +95,40 @@ form.addEventListener('submit', e => {
     input.value = '';
 }
   });
+
+// --- FORMULAIRE DE CONTACT ---
+const formContact = document.querySelector('.form-contact');
+const feedback = document.querySelector('#form-feedback');
+
+formContact.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const prenom = document.querySelector('#prenom').value.trim();
+  const nom = document.querySelector('#nom').value.trim();
+  const email = document.querySelector('#email').value.trim();
+  const tel = document.querySelector('#tel').value.trim();
+  const message = document.querySelector('#contact-message').value.trim();
+
+  // ✅ Une regex "simple" pour vérifier que l’email ressemble à un email
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  const formIsValid =
+    prenom && nom && emailRegex.test(email) && tel && message;
+
+  if (formIsValid) {
+    feedback.textContent = "✅ Message envoyé avec succès !";
+    feedback.style.color = "green";
+    feedback.style.display = "block";
+    formContact.reset();
+
+    setTimeout(() => {
+      feedback.style.display = "none";
+    }, 4000);
+  } else {
+    feedback.textContent = "❌ Merci de remplir tous les champs correctement.";
+    feedback.style.color = "red";
+    feedback.style.display = "block";
+  }
+});
+
+
