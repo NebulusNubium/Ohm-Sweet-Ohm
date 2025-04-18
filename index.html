@@ -207,18 +207,23 @@
             <div class="form-conteneur">
                 <form class="form-contact">
                     <h2>Contactez Nous</h2>
-
+                  
                     <div class="form-details">
-                        <input type="text" placeholder="Votre Prénom">
-                        <input type="text" placeholder="Votre Nom">
-                        <input type="text" placeholder="Votre Email">
-                        <input type="text" placeholder="Votre Numéro">
+                      <input type="text" id="prenom" placeholder="Votre Prénom">
+                      <input type="text" id="nom" placeholder="Votre Nom">
+                      <input type="text" id="email" placeholder="Votre Email">
+                      <input type="text" id="tel" placeholder="Votre Numéro">
                     </div>
-
+                  
                     <div class="form-message">
-                        <textarea placeholder="Partagez vos questions, vos idées, ou vos besoins."></textarea>
+                      <!-- ID : contact-message sans conflit avec la ligne 111 (doublon d'ID "message") -->
+                    <textarea id="contact-message" placeholder="Partagez vos questions..."></textarea>
                     </div>
-                        <input type="submit" class="bouton">
+                  
+                    <!-- Zone d'affichage du retour utilisateur (success / erreur) -->
+                    <p id="form-feedback" style="display: none;"></p>
+                  
+                    <input type="submit" class="bouton">
                 </form>
             </div>
         </div>
