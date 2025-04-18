@@ -111,7 +111,7 @@ footer {
 
 .form-contact {
   background: linear-gradient(0deg, rgba(0, 191, 150, 0.45) 0%, rgba(255, 119, 112, 0.75) 70%);
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -134,9 +134,14 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+}
+.form-details h2 {
+  text-align: left;
 }
 .form-details input {
-  width: 300px;
+  width: 40%;
   height: 50px;
   border-radius: 50px;
   padding: 10px;
@@ -166,9 +171,17 @@ footer {
   font-family: "Dancing Script", cursive;
 }
 
+.separation {
+  position: relative;
+}
 .separation::after {
-  border: 2px solid #FF7770;
-  position: absolute;
+  content: "";
+  display: block;
+  width: 95vw;
+  height: 3px;
+  margin: 2rem auto;
+  background-color: #FF7770;
+  top: 10rem;
 }
 
 .ressources {
@@ -178,7 +191,6 @@ footer {
   width: 100%;
   padding: 2rem 0;
   display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
   text-align: center;
 }
@@ -197,8 +209,8 @@ footer {
   gap: 10vw;
 }
 .footer-bottom .reseaux a img {
-  width: 7vw;
-  height: 4em;
+  width: 3.5vw;
+  height: 2em;
   cursor: pointer;
   transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
@@ -437,6 +449,44 @@ footer {
   margin-top: 2rem;
 }
 
+@media screen and (max-width: 1023px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3.25rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+  .form-conteneur {
+    max-width: 90%;
+  }
+  .form-conteneur .form-contact {
+    margin-top: 0;
+  }
+  .ressources {
+    flex-direction: column;
+  }
+  .ressources .ressources-container {
+    order: 2;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-bottom p {
+    order: 2;
+  }
+  .footer-bottom .reseaux a img {
+    width: 20vw;
+  }
+}
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 3rem;
@@ -454,15 +504,13 @@ footer {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 1100px) {
-  h1 {
-    font-size: 5rem;
+@media screen and (max-width: 1023px) {
+  footer .form-details input {
+    width: 100%;
+    height: 10%;
   }
-  h2 {
-    font-size: 3.25rem;
-  }
-  h3 {
-    font-size: 1.5rem;
+  footer .form-message textarea {
+    height: 60px;
   }
 }
 
