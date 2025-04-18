@@ -1,0 +1,317 @@
+@use "../abstract/variables";
+@use "../base/base";
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+#body-article {
+    overflow-y: scroll;
+    background-color: #FFECEB;
+    background-image: url(../img/dimension.png);
+}
+
+//  decoration de la banner 
+#banner-decoration {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    margin: 0;
+    overflow: hidden;
+     .banner-img-container{
+         position: absolute;
+         bottom:  -50%;
+         left: -1%;
+         rotate: 180deg;
+         transform: rotateZ(-7.5deg);
+         z-index: 1;
+         img {
+             width: 99vw;
+             rotate: 180deg;
+             transform: rotateX(180deg);
+             opacity: 70%;
+         }
+     }
+}
+
+//  heading de la page article 
+
+
+ .article-heading {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     justify-self: center;
+     width: 80%;
+     height: 196px;
+     background-color: white;
+     border-top-left-radius: 150px;
+     border-bottom-right-radius: 150px;
+     border-bottom-left-radius: 15px;
+     border-top-right-radius: 15px;
+     z-index: -2;
+ }
+
+//   section histoire de la création 
+
+ #history {  // box de la section
+     margin: 0;
+     margin-top: 20%;
+     padding: 0;
+     .history-heading {  // box heading de la section
+         position: relative;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         justify-self: center;
+         width: 75%;
+         height: 231px;
+         background-color: rgba(41, 142, 137, 0.7);
+         border-top-left-radius: 150px;
+         border-bottom-right-radius: 150px;
+        .title-deco-container {  // deco de la box heading
+            position: absolute;
+            width: 99%;
+            height: 100%;
+            img { // image de la deco
+                 width: 100%;
+                 position: absolute;
+                 left: -11.10%;
+                 top: -54.1%;
+                 width: 32.5%;
+                 rotate: 134deg;
+                 opacity: 90%;
+            }
+        }
+        .title-deco-container2 {
+            position: absolute;
+            width: 99%;
+            height: 100%;
+            img {
+                width: 100%;
+                position: absolute;
+                left: 78.6%;
+                top: -34%;
+                width: 32.5%;
+                rotate: -45deg;
+                opacity: 90%;
+            }
+        }
+    }
+}
+
+//   partie content section histoire 
+ .history-content-container { // box general de cette partie 
+     display: flex;
+     justify-self: center;
+     width: 90%;
+     height: 650px;
+     background-color: #D9D9D9;
+     border-radius: 500px;
+     margin-top: 20%;
+     .history-img-container { // box de l'image 
+         display: flex;
+         align-self: center;
+         margin-left: 5%;
+         width: 350px;
+         height: 350px;
+         background-color: #FFECEB;
+         border-radius: 50%;
+         background-image: url(../img/image-articles.png);
+         background-size: cover;
+         background-position: center;
+         border: 3px solid white;
+     }
+     .history-content { // box du paragraphe
+         align-content: center;
+         justify-content: center;
+         width: 60%;
+         height: 100%;
+         margin-left: 2.5%;
+         p {
+             line-height: 35px;
+             text-align: center;
+         }
+     }
+ }   
+
+//  section effet style half page 
+.half-style {
+    .half-container {
+        margin-top: 20%;
+        .box-content-half {
+            position: absolute;
+            width: 95%;
+            height:350px;
+            background-color: white;
+            rotate: -9.1deg;
+        }
+    }
+    .half-deco-container {
+        position: relative;
+        .half-img-container {
+            position: absolute;
+            bottom: -380px;
+            left: -10%;
+            rotate: 180deg;
+            transform: rotateZ(-1.5deg);
+            z-index: 1;
+            width: 95%;
+            z-index: -1;
+            img {
+                width: 100%;
+                rotate: 180deg;
+                transform: rotateX(--180deg);
+                opacity: 70%;
+            }
+        }
+    }
+}
+
+  // section main content 
+ 
+
+#main-content {
+    position: relative;
+    .main-content-container {
+        position: relative; 
+        .main-content-heading {
+            position: absolute;
+            top: -294.4px;
+            left: 12.5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-self: center;
+            width: 75%;
+            height: 231px;
+            background-color: rgba(41, 142, 137, 0.9);
+            border-top-left-radius: 150px;
+            border-bottom-right-radius: 150px;
+        }
+        .main-deco-container {  // deco de la box heading
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            img { // image de la deco
+                 width: 100%;
+                 position: absolute;
+                 left: -11.10%;
+                 top: -54.1%;
+                 width: 32.5%;
+                 rotate: 134deg;
+                 opacity: 90%;
+            }
+        }
+        .main-deco-container2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                position: absolute;
+                left: 78.6%;
+                top: -34%;
+                width: 32.5%;
+                rotate: -45deg;
+                opacity: 90%;
+            }
+        }
+        .main-deco-title {
+            position: absolute;
+            rotate: -75deg;
+            right: -55%;
+            top: 400px;
+            width: 75%;
+            height: auto;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.main-content-cards-container { // box general de cette partie 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    margin-top: 30%;
+    background-color: white;
+    .card {
+        display: flex;
+        width: 90%;
+        height: 650px;
+        background-color: #D9D9D9;
+        border-radius: 500px;
+        margin-top: 15%;
+        margin-bottom: 5%;
+        .main-card-content { // box du paragraphe
+            align-content: center;
+            justify-content: center;
+            width: 60%;
+            height: 100%;
+            margin-left: 5%;
+            p {
+                line-height: 35px;
+                text-align: center;
+            }
+        }
+        .main-img-container { // box de l'image 
+            display: flex;
+            align-self: center;
+            margin-left: 5%;
+            width: 350px;
+            height: 350px;
+            background-color: #FFECEB;
+            border-radius: 50%;
+            background-image: url(../img/image-articles.png);
+            background-size: cover;
+            background-position: center;
+            border: 3px solid white;
+        }
+    }
+    .card:nth-of-type(2) {
+        margin-bottom: 15%;
+    }
+}   
+
+
+.card-deco-bottom {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    right: -5%;
+    bottom: 2.5%;
+    img {
+        width: 100%;
+        height: 100%;
+        opacity: 75%;
+    }
+}
+
+.card-deco-bottom2 {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    left: 0;
+    bottom: -15%;
+    transform: rotateY(180deg);
+    img {
+        width: 100%;
+        height: 100%;
+        opacity: 75%;
+    }
+}
+
+
+ 

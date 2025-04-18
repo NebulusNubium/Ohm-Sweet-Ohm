@@ -121,3 +121,586 @@ small { font-size: 1rem; }
     }
 }
 
+}
+
+
+
+// responsive de la page d'article 1 
+#body-article {
+    @media screen and (max-width: 1440px) {
+        #banner-decoration {
+             .banner-img-container{
+                 position: absolute;
+                 bottom:  -30%;
+                 left: -1%;
+                 rotate: 180deg;
+                 transform: rotateZ(-7.5deg);
+                 z-index: 1;
+
+             }
+        }
+        // section histoire 
+        #history {  // box de la section
+            .history-heading {  // box heading de la section
+               .title-deco-container {  // deco de la box heading
+                   position: absolute;
+                   width: 100%;
+                   height: 100%;
+                   img { // image de la deco
+                        width: 100%;
+                        position: absolute;
+                        left: -10.60%;
+                        top: -35.1%;
+                        width: 32.5%;
+                        rotate: 134deg;
+                        opacity: 90%;
+                   }
+               }
+               .title-deco-container2 {
+                   position: absolute;
+                   width: 100%;
+                   height: 100%;
+                   img {
+                       width: 100%;
+                       position: absolute;
+                       left: 77.9%;
+                       top: -8.3%;
+                       width: 32.5%;
+                       rotate: -45deg;
+                       opacity: 90%;
+                   }
+               }
+           }
+       }
+        // section half 
+        .half-style {
+            .half-container {
+                margin-top: 20%;
+                .box-content-half {
+                    position: absolute;
+                    width: 110%;
+                    height:350px;
+                    background-color: white;
+                    rotate: -9.1deg;
+                }
+            }
+            .half-deco-container {
+                .half-img-container {
+                    overflow-x: hidden;
+                    bottom: -280px;
+                }
+            }
+        }
+    //    section main content 
+        #main-content {
+            .main-content-container {
+                .main-content-heading {
+                    position: absolute;
+                    top: -250.4px;
+                    left: 12.5%;
+                }
+                .main-deco-container {  // deco de la box heading
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    img { // image de la deco
+                        width: 100%;
+                        position: absolute;
+                        left: -10.65%;
+                        top: -35%;
+                        width: 32.5%;
+                        rotate: 131deg;
+                        opacity: 90%;
+                    }
+                }
+                .main-deco-container2 {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        position: absolute;
+                        left: 77.6%;
+                        top: -5%;
+                        width: 32.5%;
+                        rotate: -45deg;
+                        opacity: 90%;
+                    }
+                }
+            }
+        }
+    }
+} 
+#body-article {
+    @media screen and (max-width: 1024px) {
+        h1 { font-size: 3rem; }
+        h2 { font-size: 2rem; }
+        h3 { font-size: 1.5rem; }
+        p { font-size: 1.25rem; }
+        small { font-size: 1rem; }
+        #banner-decoration {
+             .banner-img-container{
+                 position: absolute;
+                 bottom:  10%;
+             }
+        }
+        // section histoire 
+        #history {  // box de la section
+            .history-heading {  // box heading de la section
+                height: 175px;
+               .title-deco-container {  // deco de la box heading
+                   position: absolute;
+                   width: 100%;
+                   height: 100%;
+                   img { // image de la deco
+                        width: 100%;
+                        position: absolute;
+                        left: -9.60%;
+                        top: -35.1%;
+                        width: 35.5%;
+                        rotate: 134deg;
+                        opacity: 90%;
+                   }
+               }
+               .title-deco-container2 {
+                   position: absolute;
+                   width: 100%;
+                   height: 100%;
+                   img {
+                       width: 100%;
+                       position: absolute;
+                       left: 73.2%;
+                       top: -9%;
+                       width: 35.5%;
+                       rotate: -45deg;
+                       opacity: 90%;
+                   }
+               }
+           }
+           .history-content-container {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            justify-self: center;
+            justify-content: center;
+            align-items: center;
+            width: 95%;
+            height: 1050px;
+            .history-img-container {
+                margin-top: 2.5%;
+                width: 40%;
+                height: 45%;
+            }
+            .history-content {
+                width: 85%;
+                margin-top: -15%;
+                p {
+                    margin-top: 0;
+                }
+            }
+           }
+       }
+        // section half 
+        .half-style {
+            .half-deco-container {
+                .half-img-container {
+                    bottom: -200px;
+                }
+            }
+        }
+    //    section main content 
+        #main-content {
+            .main-content-container {
+                .main-content-heading {
+                    height: 200px;
+                    top: -200.4px;
+                    left: 12.5%;
+                }
+                .main-deco-container {  // deco de la box heading
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    img { // image de la deco
+                        width: 100%;
+                        position: absolute;
+                        left: -10.25%;
+                        top: -26%;
+                        width: 35.5%;
+                        rotate: 131deg;
+                        opacity: 90%;
+                    }
+                }
+                .main-deco-container2 {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        position: absolute;
+                        left: 73.6%;
+                        top: 3%;
+                        width: 35.5%;
+                        rotate: -50deg;
+                        opacity: 90%;
+                    }
+                }
+            }
+            .main-content-cards-container {
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    align-self: center;
+                    justify-self: center;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 1050px;
+                    .main-img-container {
+                        margin-bottom: 2.5%;
+                        width: 45%;
+                        height: 65%;
+                    }
+                    .main-card-content {
+                        width: 75%;
+                        margin-bottom: -9.5%;
+                        margin-left: -1%;
+                        p {
+                            line-height: 28px;
+                            margin-top: 0;
+                        }
+                    }
+                }
+                .card-deco-bottom2 {
+                    top: 90%;
+                }
+            }
+        }
+    }
+} 
+  #body-article {
+    @media screen and (max-width: 768px) {
+        #banner-decoration {
+             .banner-img-container{
+                 position: absolute;
+                 bottom:  33%;
+             }
+        }
+        .article-heading {
+            h2 {
+                width: 75%;
+                text-align: center;
+            }
+        }
+
+
+        #history {  // box de la section
+            .history-heading {  // box heading de la section
+                height: 175px;
+               .title-deco-container {  // deco de la box heading
+                   position: absolute;
+                   width: 100%;
+                   height: 100%;
+                   img { // image de la deco
+                        width: 100%;
+                        position: absolute;
+                        left: -10.60%;
+                        top: -35.1%;
+                        width: 45.5%;
+                        rotate: 134deg;
+                        opacity: 90%;
+                   }
+               }
+               .title-deco-container2 {
+                   position: absolute;
+                   width: 100%;
+                   height: 100%;
+                   img {
+                       width: 100%;
+                       position: absolute;
+                       left: 66.2%;
+                       top: -9%;
+                       width: 45.5%;
+                       rotate: -45deg;
+                       opacity: 90%;
+                   }
+               }
+           }
+           .history-content-container {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            justify-self: center;
+            justify-content: center;
+            align-items: center;
+            width: 95%;
+            height: 1050px;
+            .history-img-container {
+                margin-top: 2.5%;
+                width: 45%;
+                height: 40%;
+            }
+            .history-content {
+                width: 85%;
+                margin-top: -15%;
+                p {
+                    margin-top: 0;
+                }
+            }
+           }
+       }
+
+
+        #main-content {
+            .main-content-container {
+                .main-content-heading {
+                    height: 200px;
+                    top: -175.4px;
+                    left: 12.5%;
+                    h2 {
+                        width: 50%;
+                        text-align: center;
+                    }
+                }
+                .main-deco-container {  // deco de la box heading
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    img { // image de la deco
+                        width: 100%;
+                        position: absolute;
+                        left: -12.25%;
+                        top: -26%;
+                        width: 45.5%;
+                        rotate: 131deg;
+                        opacity: 90%;
+                    }
+                }
+                .main-deco-container2 {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        position: absolute;
+                        left: 67.6%;
+                        top: 3%;
+                        width: 45.5%;
+                        rotate: -50deg;
+                        opacity: 90%;
+                    }
+                }
+            }
+            .main-content-cards-container {
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    align-self: center;
+                    justify-self: center;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 1050px;
+                    .main-img-container {
+                        margin-bottom: 2.5%;
+                        width: 45%;
+                        height: 45%;
+                    }
+                    .main-card-content {
+                        width: 65%;
+                        margin-bottom: -9.5%;
+                        margin-left: -1%;
+                        p {
+                            line-height: 28px;
+                            margin-top: 0;
+                        }
+                    }
+                }
+                .card-deco-bottom2 {
+                    top: 90%;
+                }
+            }
+        }
+    }
+} 
+
+#body-article {
+    @media screen and (max-width: 425px) {
+        #banner-decoration {
+             .banner-img-container{
+                 position: absolute;
+                 bottom:  63%;
+             }
+        }
+        .article-heading {
+            width: 95%;
+            h2 {
+                width: 75%;
+                text-align: center;
+                font-size: 1.75rem;
+            }
+        }
+
+
+        #history {  // box de la section
+            .history-heading {  // box heading de la section
+                height: 175px;
+                width: 95%;
+                h2 {
+                    width: 75%;
+                    text-align: center;
+                    font-size: 1.75rem;
+                }
+               .title-deco-container {  // deco de la box heading
+                   position: absolute;
+                   width: 100%;
+                   height: 100%;
+                   img { // image de la deco
+                        width: 100%;
+                        position: absolute;
+                        left: -10.60%;
+                        top: -21.1%;
+                        width: 52.5%;
+                        rotate: 134deg;
+                        opacity: 90%;
+                   }
+               }
+               .title-deco-container2 {
+                   position: absolute;
+                   width: 100%;
+                   height: 100%;
+                   img {
+                       width: 100%;
+                       position: absolute;
+                       left: 56.2%;
+                       top: 12%;
+                       width: 52.5%;
+                       rotate: -45deg;
+                       opacity: 90%;
+                   }
+               }
+           }
+           .history-content-container {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            justify-self: center;
+            justify-content: center;
+            align-items: center;
+            width: 95%;
+            height: 1050px;
+            margin-bottom: 50%;
+            .history-img-container {
+                margin-top: 2.5%;
+                width: 55%;
+                height: 25%;
+                margin-bottom: -15%;
+            }
+            .history-content {
+                width: 85%;
+                margin-top: -15%;
+                p {
+                    margin-top: 0;
+                    font-size: 0.85rem;
+                }
+            }
+           }
+       }
+
+
+        #main-content {
+            .main-content-container {
+                .main-content-heading {
+                    height: 170px;
+                    top: -115.4px;
+                    left: 2.2%;
+                    width: 95%;
+                    margin: 0 auto;
+                    h2 {
+                        width: 50%;
+                        text-align: center;
+                        font-size: 1.50rem;
+                    }
+                }
+                .main-deco-container {  // deco de la box heading
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    img { // image de la deco
+                        width: 100%;
+                        position: absolute;
+                        left: -11.25%;
+                        top: -22%;
+                        width: 52.5%;
+                        rotate: 131deg;
+                        opacity: 90%;
+                    }
+                }
+                .main-deco-container2 {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        position: absolute;
+                        left: 56.6%;
+                        top: 10%;
+                        width: 52.5%;
+                        rotate: -47deg;
+                        opacity: 90%;
+                    }
+                }
+                .main-deco-title {
+                    position: absolute;
+                    rotate: -75deg;
+                    right: -50%;
+                    top: 250px;
+                    width: 100%;
+                    height: auto;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .main-content-cards-container {
+                padding-top: 25%;
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    align-self: center;
+                    justify-self: center;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 1050px;
+                    .main-img-container {
+                        margin-bottom: 2.5%;
+                        width: 45%;
+                        height: 22.5%;
+                        margin-top: -15%;
+                    }
+                    .main-card-content {
+                        width: 75%;
+                        margin-bottom: -9.5%;
+                        margin-left: -1%;
+                        p {
+                            line-height: 28px;
+                            margin-top: 0;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                .card-deco-bottom {
+                    top: 50%;
+                    height: 15%;
+                    width: 100%;
+                }
+                .card-deco-bottom2 {
+                    width: 90%;
+                    height: 20%;
+                    top: 90%;
+                }
+            }
+        }
+    }
+} 

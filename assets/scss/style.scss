@@ -9,6 +9,7 @@
 @use "components/menu-items";
 
 @use "pages/homepage";
+@use "pages/article";
 @use "base/responsive"; 
 
 // Ordre dans style: BASE (base, fonts, utilies [class se répétant, ex: .container]) puis LAYOUT (partie du site qui se répète: header, footer) puis COMPONENTS (banner, btn, card) puis PAGES (homepage, etc..) puis RESPONSIVE
