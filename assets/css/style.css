@@ -298,9 +298,6 @@ footer {
   #homepage .logo-top {
     width: 15%;
   }
-  #homepage .nav {
-    display: none;
-  }
   #homepage .articles-container {
     display: flex;
     flex-direction: column;
