@@ -148,7 +148,7 @@ html, body {
         margin-top: 20%;
         .box-content-half {
             position: absolute;
-            width: 95%;
+            width: 125%;
             height:350px;
             background-color: white;
             rotate: -9.1deg;
@@ -163,7 +163,7 @@ html, body {
             rotate: 180deg;
             transform: rotateZ(-1.5deg);
             z-index: 1;
-            width: 95%;
+            width: 125%;
             z-index: -1;
             img {
                 width: 100%;
@@ -184,7 +184,7 @@ html, body {
         position: relative; 
         .main-content-heading {
             position: absolute;
-            top: -294.4px;
+            top: -268.4px;
             left: 12.5%;
             display: flex;
             align-items: center;

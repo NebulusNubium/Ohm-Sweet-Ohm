@@ -1,6 +1,7 @@
 @use "../abstract/variables";
 @media screen and (max-width: 400px) {
 
+<<<<<<< HEAD
     #homepage {
         margin: 0;
         .journal-container {
@@ -52,6 +53,10 @@
     }
 }
 @media screen and (max-width: 1200px) {
+=======
+
+@media screen and (max-width: 1023px) {
+>>>>>>> origin/article
     
     h1 {
         font-size: 5rem;
@@ -126,7 +131,30 @@
 
     // homepage
 
+<<<<<<< HEAD
     
+=======
+    #homepage {
+        header {
+            margin-bottom: -10%;
+        }
+        .menu {
+            display: inline-block;
+            width: 5%;
+        }
+        .logo-top {
+            width: 15%;
+        }
+        .articles-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .input {
+            padding-left: 5rem;
+        }
+    }
+}
+>>>>>>> origin/article
 
 
 @media screen and (max-width: 768px) {
@@ -175,6 +203,7 @@ small { font-size: 1rem; }
         }
     }
 }
+
 
 
 
