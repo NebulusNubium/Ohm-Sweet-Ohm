@@ -1,4 +1,36 @@
 //Carroussel
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('#carroussel .carroussel-container');
+  const slides    = Array.from(container.querySelectorAll('.carroussel-article'));
+  const prevBtn   = container.querySelector('.chevron-left');
+  const nextBtn   = container.querySelector('.chevron-right');
+  let current     = 0;
+
+  function updateSlides() {
+    slides.forEach(slide => slide.classList.remove('prev','active','next'));
+
+    const prevIndex = (current - 1 + slides.length) % slides.length;
+    const nextIndex = (current + 1) % slides.length;
+
+    slides[prevIndex].classList.add('prev');
+    slides[current].classList.add('active');
+    slides[nextIndex].classList.add('next');
+  }
+
+  prevBtn.addEventListener('click', () => {
+    current = (current - 1 + slides.length) % slides.length;
+    updateSlides();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    current = (current + 1) % slides.length;
+    updateSlides();
+  });
+
+  updateSlides();
+});
+
+
 
 //exercice interactif
 const start = document.querySelector('.demonstration');
